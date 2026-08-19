@@ -1,0 +1,45 @@
+{
+  "name": "yt-playlist-organizer-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that uses the YouTube Data API v3 to organize playlists — create, list, update, delete playlists and playlist items. Does nothing else.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "yt-playlist-organizer-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "youtube",
+    "youtube-data-api",
+    "playlists"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.9"
+  }
+}
