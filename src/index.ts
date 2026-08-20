@@ -105,7 +105,7 @@ async function main() {
     "auth_status",
     {
       description:
-        "Check whether API key and/or OAuth access token are configured.",
+        "Check whether API key and/or OAuth access token are configured. Note: this server cannot handle the default \"Watch Later\" playlist (WL) because it is a constant (not a real playlist ID) in the public YouTube API and cannot be modified via the API; see https://stackoverflow.com/a/39555756 .",
       inputSchema: z.object({}),
     },
     async () => {

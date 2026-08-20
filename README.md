@@ -136,6 +136,10 @@ To run it through the Nix shell instead, use the same key but change `command`:
   Each update therefore costs an extra read against your quota.
 - `startAt`/`endAt` are provided in **seconds** and converted to ISO 8601
   durations (`PT1M30S`) before being sent to the API.
+- This server **cannot handle the default "Watch Later" playlist** (`WL`). It
+  is a constant (not a real playlist ID) in the public YouTube API, and there is
+  no supported way to modify it via the API. See
+  [Stack Overflow](https://stackoverflow.com/a/39555756) for details.
 
 ## Development
 
